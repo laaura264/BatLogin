@@ -46,19 +46,19 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="3aQ-RJ-Yjr">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="Yw2-mh-BNA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="Yw2-mh-BNA" customClass="LoginViewController" customModule="BatLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IZy-MI-deE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_logo_login" translatesAutoresizingMaskIntoConstraints="NO" id="1lq-wK-rwI">
-                                <rect key="frame" x="114.5" y="70" width="146" height="65"/>
+                                <rect key="frame" x="112.5" y="70" width="146" height="65"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_bat_letras" translatesAutoresizingMaskIntoConstraints="NO" id="0wx-pQ-wUx">
-                                <rect key="frame" x="93.5" y="143" width="188" height="19"/>
+                                <rect key="frame" x="91.5" y="143" width="188" height="19"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USUARIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUJ-Jp-qTH">
                                 <rect key="frame" x="60" y="232" width="56" height="15"/>
@@ -67,7 +67,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z1s-G2-lNc">
-                                <rect key="frame" x="62" y="264" width="248" height="44"/>
+                                <rect key="frame" x="62" y="264" width="244" height="44"/>
                                 <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Dwk-dh-4Ne"/>
@@ -79,7 +79,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTRASEÑA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKm-iA-Nmb">
-                                <rect key="frame" x="62" y="320" width="89" height="15"/>
+                                <rect key="frame" x="62" y="320" width="85" height="15"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                 <color key="textColor" red="0.94509803920000002" green="0.76862745099999996" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -138,6 +138,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GEP-QN-ezY"/>
                     </view>
+                    <connections>
+                        <outlet property="btnEntrar" destination="n2V-V1-lwT" id="mwR-sh-0jR"/>
+                        <outlet property="imgBatLogin" destination="0wx-pQ-wUx" id="5yj-p1-h6E"/>
+                        <outlet property="imgLogoBatman" destination="1lq-wK-rwI" id="VGx-qi-n8P"/>
+                        <outlet property="lblPass" destination="BKm-iA-Nmb" id="9kI-vG-khc"/>
+                        <outlet property="lblUsuario" destination="mUJ-Jp-qTH" id="qs5-1b-MsO"/>
+                        <outlet property="txtPass" destination="fMO-mL-6kd" id="wuP-9L-431"/>
+                        <outlet property="txtUsuario" destination="Z1s-G2-lNc" id="DZM-Mj-l7T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="03L-37-fOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
